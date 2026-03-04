@@ -53,6 +53,7 @@ SKYRO supports two scanning modes:
 No credentials required:
 
 bash/cmd
+
 skyro http://example.com
 
 ### 🔐 2. Grey-Box Scan (With Credentials)
@@ -60,6 +61,7 @@ skyro http://example.com
 Scan authenticated areas of a web application:
 
 bash/cmd
+
 skyro http://example.com -m grey-box -u admin -p password123
 
 ### ⚙️ 3. Advanced Grey-Box Scan
@@ -67,6 +69,7 @@ skyro http://example.com -m grey-box -u admin -p password123
 #### 🔎 Deep Scan (More Threads & Depth)
 
 bash/cmd
+
 skyro http://example.com -m grey-box -u admin -p password123 -d 5 -t 15
 
 
@@ -76,6 +79,7 @@ skyro http://example.com -m grey-box -u admin -p password123 -d 5 -t 15
 #### 🛡️ Low-Impact / Safe Scan
 
 bash/cmd
+
 skyro http://example.com -m grey-box -u admin -p password123 -d 1 -t 2
 
 
