@@ -7,39 +7,116 @@ SKYRO Scanner is a web vulnerability scanner designed for modern web application
 > ⚠️ Disclaimer: This tool is intended for authorized security testing only. Do not scan systems without proper permission.
 
 ## 📦 Installation
-* pip install setuptools
-* python setup.py install
-* pip install -e .
 
-Followed Below:
-### 1️⃣ Install Required Dependency
+SKYRO Scanner supports **Linux (Kali/Ubuntu)** and **Windows**. Follow the instructions based on your operating system.
 
-Before installing SKYRO, ensure setuptools is installed:
+---
 
-bash/cmd
-* pip install setuptools
+# 🐧 Kali Linux / Linux Installation (Recommended)
 
-If pip is not working properly, use:
+Due to Python security restrictions on Kali (PEP 668), the recommended way to install SKYRO is using **pipx**.
 
-bash/cmd
-* python -m pip install setuptools
+### 1️⃣ Install pipx
 
-### 2️⃣ Install SKYRO (Recommended Modern Method)
+```bash
+sudo apt install pipx
+pipx ensurepath
+```
 
-Instead of using the outdated setup.py install, use:
+Restart your terminal after installation.
 
-bash/cmd
-* pip install -e .
+---
 
-This installs SKYRO in editable mode, which is cleaner and ideal for development.
+### 2️⃣ Clone the Repository
 
-> ⚠️ Avoid using:
->
-> bash/cmd
-> python setup.py install
-> 
->
-> This is considered legacy installation practice.
+```bash
+git clone https://github.com/SKYRONIGHT/skyro-scanner
+cd skyro-scanner
+```
+
+
+### 3️⃣ Install SKYRO
+
+```bash
+pipx install .
+```
+
+
+### 4️⃣ Run the Scanner
+
+```bash
+skyro -h
+```
+
+Example scan:
+
+```bash
+skyro https://example.com
+```
+
+
+# 🪟 Windows Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/SKYRONIGHT/skyro-scanner
+cd skyro-scanner
+```
+
+Or download and extract the ZIP file.
+
+---
+
+### 2️⃣ Install Required Dependency
+
+```bash
+pip install setuptools
+```
+
+If pip does not work:
+
+```bash
+python -m pip install setuptools
+```
+
+
+### 3️⃣ Install SKYRO
+
+```bash
+pip install -e .
+```
+
+### 4️⃣ Run the Scanner
+
+```bash
+skyro -h
+```
+
+Example:
+
+```bash
+skyro https://example.com
+```
+
+# ⚡ Quick Run (Without Installation)
+
+You can also run SKYRO directly without installing it:
+
+```bash
+git clone https://github.com/SKYRONIGHT/skyro-scanner
+cd skyro-scanner
+python3 skyro.py https://example.com
+
+# 🔧 Requirements
+
+* Python **3.8+**
+* requests
+* beautifulsoup4
+* lxml
+* urllib3
+
+Dependencies are automatically installed during setup.
 
 ## 🚀 Usage Guide
 
