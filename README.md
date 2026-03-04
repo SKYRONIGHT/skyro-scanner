@@ -15,6 +15,7 @@ Followed Below:
 ### 1️⃣ Install Required Dependency
 
 Before installing SKYRO, ensure setuptools is installed:
+
 bash/cmd
 * pip install setuptools
 
