@@ -7,28 +7,28 @@ SKYRO Scanner is a web vulnerability scanner designed for modern web application
 > ⚠️ Disclaimer: This tool is intended for authorized security testing only. Do not scan systems without proper permission.
 
 ## 📦 Installation
-pip install setuptools
-python setup.py install
-pip install -e .
+* pip install setuptools
+* python setup.py install
+* pip install -e .
 
 Followed Below:
 ### 1️⃣ Install Required Dependency
 
 Before installing SKYRO, ensure setuptools is installed:
 bash/cmd
-pip install setuptools
+* pip install setuptools
 
 If pip is not working properly, use:
 
 bash/cmd
-python -m pip install setuptools
+* python -m pip install setuptools
 
 ### 2️⃣ Install SKYRO (Recommended Modern Method)
 
 Instead of using the outdated setup.py install, use:
 
 bash/cmd
-pip install -e .
+* pip install -e .
 
 This installs SKYRO in editable mode, which is cleaner and ideal for development.
 
